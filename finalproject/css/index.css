@@ -1,0 +1,156 @@
+@font-face{
+	font-family: overwatch_font;
+	src: url('../font/koverwatch.ttf')
+}
+
+body {
+    background: url('../media/ow-background.jpg');
+    background-repeat: repeat;
+    background-color: #33a8ff
+}
+
+article {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    overflow: auto;
+    flex-wrap: wrap;
+    min-width: 400px;
+}
+
+article>section {
+    flex: 1;
+    opacity: 0.9;
+    padding: 1%;
+    min-width: 250px;
+    margin-right: 1%;
+}
+
+header,
+footer {
+    width: 75%;
+}
+
+audio,
+video {
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: black;   
+    font-family: "Calisto MT", serif;
+    background-color: none;
+    opacity: 0.9;
+    font-size: 20pt;
+    text-shadow: 1px 1px 1px black;
+}
+
+h2 {
+    font-family: "Calisto MT", serif;
+    color: black;
+    text-shadow: 1px 1px 1px black;
+    font-size: 24pt;
+    text-align: center;
+}
+
+h3 {
+    font-family: overwatch_font;
+    color: black;
+    
+    font-size: 25pt;
+}
+
+hr {
+    color: black;
+    height: 6px;
+    opacity: 0.3;
+}
+
+a {
+    margin-left: 20px;
+}
+
+a:link {
+    color: white;
+    font-family: "calisto mt", calibri, cambria, serif;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: #555;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.indent {
+    padding-left: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-2 {width: 16.66%;}
+
+nav a {
+    text-decoration:none;
+}
+nav ul{
+    list-style:none;
+    display:inline-table;
+}
+nav ul li{
+    border-bottom:2px solid none;
+    border-right:2px solid none;
+    display:inline;
+}
+nav ul li a:link, nav ul li a:visited {
+    font-size:10pt;
+    margin:inherit;
+    font-weight:bold;
+    padding:10px;
+    background-color:#555;
+    color:555;
+}
+nav ul li a:hover, nav ul li a:active{
+    font-size:10pt;
+    font-weight:bold;
+    padding:10px;
+    background-color:555;
+    color:#33a8ff;
+}
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    text-align: center; 
+    width: 18%; 
+    padding: 15px 0; 
+    transition: all 0.3s ease; 
+    color: white; 
+    font-size: 34px; 
+}
+
+.icon-bar a:hover {
+    background-color: #000; 
+}
